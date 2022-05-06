@@ -272,7 +272,7 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :azure_active_directory_b2c, {policy_options: {application_identifier: "f2510264-45cd-4fe9-a631-3d05cc672f67", tenant_name: "fortgarrywpg.onmicrosoft.com", policy_name: "B2C_1_doors"}}
+  config.omniauth :azure_active_directory_b2c, {policy_options: {application_identifier: "f2510264-45cd-4fe9-a631-3d05cc672f67", tenant_name: "fortgarrywpg", policy_name: "B2C_1_doors", scope: [:openid]}}
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/coder2000/omniauth-azure_active_directory_b2c.git
-  revision: 9d9742295ffce08fa83a6ebdb9a77ec039ef2c73
+  revision: 88e1bc15db9f0b5eee9af360baa232bf04b13de8
   specs:
     omniauth-azure_active_directory_b2c (0.3.3)
       omniauth (~> 2.1.0)
