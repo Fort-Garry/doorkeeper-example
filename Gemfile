@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.2"
+ruby "2.7.6"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
@@ -51,6 +51,8 @@ gem "bootsnap", require: false
 gem "devise"
 gem "doorkeeper"
 gem "doorkeeper-openid_connect"
+gem "omniauth"
+gem "omniauth-azure_active_directory_b2c", github: "coder2000/omniauth-azure_active_directory_b2c"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -72,3 +74,5 @@ group :development do
   gem "standard"
 end
 
+
+gem "omniauth-rails_csrf_protection", "~> 1.0"
